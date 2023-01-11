@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-image: url(./img/iphone-14-2560x1440-abstract-ios-16-hd-24001.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 200vh;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.push__wrapper {
+    margin-top: 75px;
+}
+
+.push__box {
+    display: none;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    z-index: 1;
+    padding: 10px 12px;
+    margin: 8px 0;
+}
+
+.push__box:last-child {
+    display: block;
+}
+
+.push__box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.push__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.push__top .col {
+    display: flex;
+    align-items: center;
+}
+
+.push__imgwrap {
+    margin: 2px 5px 0 0;
+}
+
+.push__icon {
+    max-width: 25px;
+    width: auto;
+}
+
+.push__title {
+    color: #bf201c;
+    text-transform: uppercase;
+}
+
+.push__time {
+    font-size: 14px;
+    color: #0123cd;
+}
+
+.push__person {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
